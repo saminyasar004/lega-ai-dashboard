@@ -23,6 +23,7 @@ import {
 	Terminal,
 } from "lucide-react";
 import Dashboard from "@/pages/Dashboard";
+import UserManagement from "@/pages/UserManagement";
 
 const queryClient = new QueryClient();
 
@@ -193,6 +194,7 @@ const App = () => (
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Dashboard />} />
+					<Route path="/users" element={<UserManagement />} />
 				</Routes>
 			</BrowserRouter>
 		</TooltipProvider>

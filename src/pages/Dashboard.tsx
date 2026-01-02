@@ -99,26 +99,34 @@ const recentActivity = [
 	},
 ];
 
+import { useNavigate } from "react-router-dom";
+
 const SidebarItem = ({
 	icon: Icon,
 	label,
+	path,
 	active = false,
 }: {
 	icon: React.ElementType;
 	label: string;
+	path?: string;
 	active?: boolean;
-}) => (
-	<div
-		className={`flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${
-			active
-				? "bg-white text-[#1e88e5] font-medium"
-				: "text-white hover:bg-white/10"
-		}`}
-	>
-		<Icon className="h-5 w-5" />
-		<span>{label}</span>
-	</div>
-);
+}) => {
+	const navigate = useNavigate();
+	return (
+		<div
+			onClick={() => path && navigate(path)}
+			className={`flex items-center gap-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${
+				active
+					? "bg-white text-[#1e88e5] font-medium"
+					: "text-white hover:bg-white/10"
+			}`}
+		>
+			<Icon className="h-5 w-5" />
+			<span>{label}</span>
+		</div>
+	);
+};
 
 const Dashboard = () => {
 	return (
@@ -139,8 +147,13 @@ const Dashboard = () => {
 						icon={LayoutDashboard}
 						label="Dashboard"
 						active
+						path="/"
 					/>
-					<SidebarItem icon={Users} label="User Management" />
+					<SidebarItem
+						icon={Users}
+						label="User Management"
+						path="/users"
+					/>
 					<SidebarItem icon={Zap} label="AI Performance" />
 					<SidebarItem icon={CreditCard} label="Subscriptions" />
 					<SidebarItem icon={MessageSquare} label="Ratings" />
