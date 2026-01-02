@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import Dashboard from "@/pages/Dashboard";
 import UserManagement from "@/pages/UserManagement";
+import AIPerformance from "@/pages/AIPerformance";
 
 const queryClient = new QueryClient();
 
@@ -195,6 +196,7 @@ const App = () => (
 				<Routes>
 					<Route path="/" element={<Dashboard />} />
 					<Route path="/users" element={<UserManagement />} />
+					<Route path="/ai-performance" element={<AIPerformance />} />
 				</Routes>
 			</BrowserRouter>
 		</TooltipProvider>
