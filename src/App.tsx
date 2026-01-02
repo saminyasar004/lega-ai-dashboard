@@ -22,6 +22,7 @@ import {
 	Code2,
 	Terminal,
 } from "lucide-react";
+import Dashboard from "@/pages/Dashboard";
 
 const queryClient = new QueryClient();
 
@@ -191,7 +192,7 @@ const App = () => (
 			<Sonner />
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<LandingPage />} />
+					<Route path="/" element={<Dashboard />} />
 				</Routes>
 			</BrowserRouter>
 		</TooltipProvider>
