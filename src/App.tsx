@@ -26,6 +26,7 @@ import Dashboard from "@/pages/Dashboard";
 import UserManagement from "@/pages/UserManagement";
 import AIPerformance from "@/pages/AIPerformance";
 import Subscriptions from "@/pages/Subscriptions";
+import Ratings from "@/pages/Ratings";
 
 const queryClient = new QueryClient();
 
@@ -199,6 +200,7 @@ const App = () => (
 					<Route path="/users" element={<UserManagement />} />
 					<Route path="/ai-performance" element={<AIPerformance />} />
 					<Route path="/subscriptions" element={<Subscriptions />} />
+					<Route path="/ratings" element={<Ratings />} />
 				</Routes>
 			</BrowserRouter>
 		</TooltipProvider>

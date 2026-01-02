@@ -164,7 +164,11 @@ const Dashboard = () => {
 						label="Subscriptions"
 						path="/subscriptions"
 					/>
-					<SidebarItem icon={MessageSquare} label="Ratings" />
+					<SidebarItem
+						icon={MessageSquare}
+						label="Ratings"
+						path="/ratings"
+					/>
 				</nav>
 
 				{/* Logout */}

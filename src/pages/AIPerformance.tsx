@@ -118,7 +118,11 @@ const AIPerformance = () => {
 						label="Subscriptions"
 						path="/subscriptions"
 					/>
-					<SidebarItem icon={MessageSquare} label="Ratings" />
+					<SidebarItem
+						icon={MessageSquare}
+						label="Ratings"
+						path="/ratings"
+					/>
 				</nav>
 				<div className="p-4 mb-4">
 					<div className="border border-white/30 rounded-lg p-3 flex items-center gap-3 cursor-pointer hover:bg-white/10 transition-colors">
