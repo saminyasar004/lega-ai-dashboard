@@ -206,7 +206,11 @@ const UserManagement = () => {
 						label="AI Performance"
 						path="/ai-performance"
 					/>
-					<SidebarItem icon={CreditCard} label="Subscriptions" />
+					<SidebarItem
+						icon={CreditCard}
+						label="Subscriptions"
+						path="/subscriptions"
+					/>
 					<SidebarItem icon={MessageSquare} label="Ratings" />
 				</nav>
 				<div className="p-4 mb-4">

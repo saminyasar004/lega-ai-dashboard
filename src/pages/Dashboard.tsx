@@ -159,7 +159,11 @@ const Dashboard = () => {
 						label="AI Performance"
 						path="/ai-performance"
 					/>
-					<SidebarItem icon={CreditCard} label="Subscriptions" />
+					<SidebarItem
+						icon={CreditCard}
+						label="Subscriptions"
+						path="/subscriptions"
+					/>
 					<SidebarItem icon={MessageSquare} label="Ratings" />
 				</nav>
 
