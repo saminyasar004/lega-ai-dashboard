@@ -1,5 +1,5 @@
 {
-	"name": "react-ts-tailwind-boilerplate",
+	"name": "lega-ai-dashboard",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/saminyasar004/react-ts-tailwind-boilerplate"
+		"url": "https://github.com/saminyasar004/lega-ai-dashboard"
 	},
 	"scripts": {
 		"dev": "vite",
